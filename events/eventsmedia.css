@@ -161,8 +161,15 @@
 @media(max-width:985px){
     .events__door{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         row-gap: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .door__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media(max-width:880px){
@@ -195,6 +202,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
+        width: 100%;
     }
     .helper img{
         width: 120px;
@@ -240,6 +248,13 @@
         margin-top: 9px;
         margin-left: 9px;
         width: 270px;
+    }
+    .door__text{
+        justify-content: center;
+        align-items: center;
+    }
+    .events__open {
+        padding: 20px;
     }
     .events__card {
         padding: 18px;
