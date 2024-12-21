@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.burger__menu{
+    display: none;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    font-family: 'montserrat', sans-serif;
+}
+header{
+    padding: 20px 0;
+    background-color: #00093C;
+    color: white;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    column-gap: 40px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.header__all{
+    display: flex;
+    column-gap: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.header__city{
+    display: flex;
+    column-gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.header__sign{
+    display: flex;
+    column-gap: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+.events{
+    position: relative;
+}
+.events__way{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #828282;
+    column-gap: 8px;
+    margin-top: 19px;
+}
+.events h2{
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 12px;
+}
+.events__open{
+    background-color: #F7941D60;
+    border-radius: 20px;
+    padding: 28px 38px 23px 42px;
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+}
+.events__open::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+    border-radius: 20px;
+}
+.open__number{
+    width: 107px;
+    height: 67px;
+}
+.open__month{
+    width: 101px;
+    height: 26px;
+    margin-top: 12px;
+}
+.events__date{
+    display: flex;
+    flex-direction: column;
+}
+.events__door{
+    margin-left: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.door__text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+}
+.door__text h2{
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 0;
+    height: 26px;
+}
+.door__text p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+ 
+}
+.door__button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.door__button button{
+    width: 222px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.events__cardBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.events__card{
+    padding: 30px;
+    background-color: #C7EEFF;
+    border-radius: 20px;
+    position: relative;
+}
+.events__card::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+    border-radius: 20px;
+}
+.events__card p{
+    width: 320px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+.card__date{
+    margin-top: 17px;
+}
+.cardtextimg{
+    display: flex;
+    align-items: center;
+    column-gap: 19px;
+    margin-top: 16px;
+    margin-bottom: 19px;
+}
+
+.events__card2{
+    padding: 30px;
+    background-color:#FFE38E;
+    border-radius: 20px;
+    position: relative;
+}
+.events__card2::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+    border-radius: 20px;
+}
+.events__card2 p{
+    width: 320px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.events__card3{
+    padding: 30px;
+    background-color:#DDDDFF;
+    border-radius: 20px;
+    position: relative;
+}
+.events__card3::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+    border-radius: 20px;
+}
+.events__card3 p{
+    width: 320px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+.events__webinar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.webinar__box::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+    border-radius: 20px;
+}
+.webinar__box{
+    display: flex;
+    position: relative;
+}
+.webinar__box::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(5px); /* задаем размытие */
+    border-radius: 20px;
+}
+.webinar__left{
+    background: url(../image/111.png) center/cover no-repeat;
+    height: 250px;
+    width: 280px;
+    border-radius: 20px 0 0 20px;
+}
+.webinar__right{
+    padding: 30px 30px 38px 20px;
+    background-color: #B8EFCF;
+    border-radius: 0 20px 20px 0;
+}
+.webinar__right p{
+    color: #4F4F4F;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    width: 447px;
+}
+.webinar__right h3{
+    font-weight: 500;
+    font-size: 18px;
+    color: #00093C;
+    margin-top: 29px;
+    margin-bottom: 27px;
+}
+.webinar__text{
+    height: 59px;
+    margin-bottom: 17px;
+    color: #4F4F4F;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    width: 447px;
+}
+
+.webinar__boxright{
+    background:url(../image/222.png) center/cover no-repeat;
+    width: 380px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 66px 30px 61px 30px;
+    position: relative;
+    z-index: 0;
+}
+.webinar__boxright h3{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+.webinar__boxright p{
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+}
+.webinar__boxright::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -2; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(4px); /* задаем размытие */
+    border-radius: 20px;
+}
+.webinar__boxright::before{
+    content: "";
+    background: url(../image/Rectangle\ 121.png) center/cover no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 250px;
+}
+
+
+.events__cardBox1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 330px;
+}
+
+.events__card4{
+    padding: 30px;
+    background-color:#C5DDFF;
+    border-radius: 20px;
+    position: relative;
+}
+.events__card4::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+    border-radius: 20px;
+}
+.events__card4 p{
+    width: 320px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.events__card5{
+    padding: 30px;
+    background-color:#FFEEF6;
+    border-radius: 20px;
+    position: relative;
+}
+.events__card5::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+    border-radius: 20px;
+}
+.events__card5 p{
+    width: 320px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.events__card6{
+    padding: 30px;
+    background-color:#FFCE94;
+    border-radius: 20px;
+    position: relative;
+}
+.events__card6::after{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D60, #27AAE160); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+    border-radius: 20px;
+}
+.events__card6 p{
+    width: 320px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+
+.sova{
+    position: relative;
+}
+.helper{
+    width: 1180px;
+    height: 270px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    bottom: -40px;
+    display: flex;
+}
+.helper img{
+    position: absolute;
+    top: 24px;
+    left: -50px;
+}
+.helper::before{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */    
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D, #27AAE1); /* здесь задайте свой градиент */;
+    filter: blur(5px); /* задаем размытие */
+    border-radius: 20px;
+}
+.helper__border{
+    background: url(../image/Union\ \(1\).png ) ;
+    width: 419.78px;
+    height: 192px;
+    margin: 40px 0px 40px 232px;
+}
+.helper__border h4{
+    margin-left: 49px;
+    margin-top: 22px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.helper__border p{
+    margin-left: 49px;
+    margin-bottom: 16px;
+    width: 352px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.helper__form{
+    padding-top: 40px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.first__row input{
+    width: 440px;
+    height: 50px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #00093C10;
+}
+.middle__row input{
+    margin-top: 20px;
+    width: 210px;
+    height: 50px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #00093C10;
+}
+.middle__row{
+    display: flex;
+    justify-content: space-between;
+}
+input::placeholder{
+    padding: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+.last__row{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.last__row p{
+    width: 211px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 10px;
+    color: #4F4F4F;
+    line-height: 14px;
+    margin-top: 0;
+}
+.last__row button{
+    width: 210px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #F7941D;
+    color: white;
+    border: 0ch;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+footer{
+    background-color: #00093C;
+    height: 560px;
+    color: white;
+}
+footer .container{
+    display: flex;
+}
+.footer__logo{
+    margin-top: 140px;
+}
+.footer__contacts h4{
+    margin-top: 43px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer__contacts p{
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    width: 199px;
+}
+.footer__social{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 25px;
+}
+.footer__yandex{
+    margin-top: 15px;
+}
+.footer__hod{
+    margin-top: 21px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+.footer__info{
+    margin-left: 86px;
+    margin-top: 70px;
+    display: flex;
+    column-gap: 60px;
+}
+.footer__kids h4{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer__kids ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 374px;
+}
+.footer__kids li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.footer__teenagers h4{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer__teenagers ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 392px;
+    width: 267px;
+}
+.footer__teenagers li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.li{
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer__adult h4{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer__adult ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 340px;
+    width: 186px;
+}
+.footer__adult li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.footer__information h4{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer__information ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 238px;
+    width: 103px;
+}
+.footer__information li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+}

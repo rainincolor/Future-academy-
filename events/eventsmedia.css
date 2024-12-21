@@ -1,0 +1,216 @@
+@media (max-width:1230px) {
+    .container{
+        padding: 0 40px;
+    }
+    .events__cardBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .events__webinar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .events__cardBox1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .footer__info{
+        display: none;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+    .helper{
+        display: flex;
+       position: static;
+       flex-direction: column;
+       height: 600px;
+       width: 100%;
+       align-items: center;
+
+    }
+    .first__row input{
+        width: 300px;
+    }
+    .middle__row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .middle__row input{
+        width: 300px;
+    }
+    .last__row{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .events__cardBox1 {
+        margin-bottom: 100px;
+    }
+    .helper__border{
+        margin: 0;
+    }
+    .helper::before{
+        display: none;
+    }
+
+}
+@media(max-width:1132px){
+    header ul{
+        display: none;
+    }
+    header{
+        position: relative;
+        z-index: 34;
+    }
+    .header__right{
+        display: none;
+    }
+    .burger{
+        width: 30px;
+        height: 3px;
+        background-color: aliceblue;
+        position: absolute;
+        top: 50px;
+        right: 40px;
+        z-index: 31;
+    }
+    .burger::after{
+        content: '';
+        width: 40px;
+        height: 3px;
+        background-color: aliceblue;
+        display: block;
+        position: absolute;
+        top: 10px;
+        transition: 1s;
+    }
+    .burger::before{
+        content: '';
+        width: 40px;
+        height: 3px;
+        background-color: aliceblue;
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        transition: 1s;
+    }
+    .burger.active{
+        background: none;
+        position: fixed;
+
+    }
+    .burger.active::after{
+        transform:rotate(45deg);
+        top: 0;
+        z-index: 31;
+        background-color: black;
+    }
+    .burger.active::before{
+        transform:rotate(-45deg);
+        top:0;
+        z-index: 31;
+        background-color: black;
+    }
+    .burger__menu.active{
+        position: fixed;
+        z-index: 30;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .burger__menu{
+        display: none;
+    }
+    .burger__menu ul{
+        display: block;
+    }
+    .burger__menu .header__right{
+        display: block;
+    }
+    .header__all{
+        display: flex;
+        align-items: center;
+    }
+}
+@media(max-width:985px){
+    .events__door{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+@media(max-width:880px){
+    .helper img{
+        left: -100px;
+    }
+    .webinar__box{
+        display: flex;
+        flex-direction: column;
+    }
+    .webinar__left{
+        width: 380px;
+        border-radius:20px 20px 0 0 ;
+    }
+    .webinar__right{
+        width: 380px;
+        border-radius: 0 0 20px 20px ;
+    }
+    .webinar__right p{
+        width: 100%;
+    }
+}
+@media(max-width:760px){
+    .door__text h2 {
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 24px;
+    }
+    .door__text p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .helper img{
+        width: 120px;
+        height: 136px;
+        left: -40px;
+    }
+    .events__open{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+@media(max-width:560px){
+    .helper img{
+        width: 120px;
+        height: 136px;
+        top: -100px;
+        left: -55px;
+    }
+}

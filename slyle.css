@@ -1,0 +1,809 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    font-family: 'montserrat', sans-serif;
+}
+header{
+    padding: 20px 0;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    column-gap: 40px;
+    font-weight: 500;
+    font-size: 14px;
+}
+header ul a{
+    color: black;
+}
+.header__all{
+    display: flex;
+    column-gap: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.header__city{
+    display: flex;
+    column-gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.header__sign{
+    display: flex;
+    column-gap: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.banner{
+    background: #00093C;
+    height: 480px;
+    width: 100vw;
+    overflow: hidden;
+}
+.banner__left{
+    height: 480px;
+    width: 1032px;
+    font-family: 'montserrat',sans-serif;
+    color: white;
+}
+.banner__left h2{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51.2px;
+    padding-top: 39px;
+}
+.banner__left h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+    padding-top: 11px;
+}
+.banner__gradient{
+    width: 181px;
+    height: 2px;
+    background:linear-gradient( to right, #F7941D, #27AAE1) ;
+    margin-bottom: 16px;
+}
+.banner__gradientbox{
+    width: 181px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.07px;
+    padding-top: 60px;
+}
+.banner__box{
+    display: flex;
+    column-gap: 19px;
+}
+.banner__left h4{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34.13px;
+    padding-top: 41px;
+}
+.banner__left button{
+    width: 286px;
+    height: 50px;
+    background-color: #F7941D;
+    border: 0;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 34px;
+}
+.banner .container{
+    display: flex;
+    position: relative;
+}
+.banner__img{
+    width: 781px;
+    height: 480px;
+    background: url(image/shutterstock_1709750299.png) center/cover no-repeat;
+    position: relative;
+}
+.vector__left1{
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    left: -186px;
+    top: 54px;
+}
+.vector__left2{
+    position: absolute;
+    left: -240px;
+    top: 263px;
+}
+.vector__left3{
+    position: absolute;
+    right: 566px;
+    top: 389px;
+}
+.vector__right1{
+    position: absolute;
+    left: 119px;
+    top: 24px;
+    width: 98.39px;
+    height: 81.73px;
+}
+.vector__right2{
+    position: absolute;
+    left: 355px;
+    top: 161px;
+    width: 100px;
+    height: 100px;
+}
+.vector__right3{
+    position: absolute;
+    left: 37px;
+    top: 310px;
+}
+.vector__right4{
+    position: absolute;
+    left: 464px;
+    top: 380px;
+}
+.vector__right5{
+    position: absolute;
+    top: 45px;
+    left: 627px;
+}
+.second .container{
+    display: flex;
+    justify-content: space-between;
+}
+.second__box{
+    display: flex;
+    column-gap: 21px;
+}
+.second__card{
+    width: 246px;
+    margin-top: 117px;
+}
+.second__card h3{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 17.19px 0 14px;
+}
+.second__card p{
+    font-weight: 400;
+    line-height: 17.07px;
+    font-size: 14px;
+    height: 118px;
+}
+.second__bird{
+   position: relative;
+   background: url(image/Union.png)center/cover no-repeat;
+   width: 350px;
+   height: 137.84px;
+   top: 100px;
+}
+.second__bird p{
+    position: relative;
+    width: 278px;
+    height: 40px;
+    font-weight: 500;
+    top: 30px;
+    left: 20px;
+}
+.second__bird img{
+    position: absolute;
+    top: 85.64px;
+    left: -40px;
+}
+.program{
+    margin-top: 96px;
+    margin-bottom: 100px;
+}
+.program h2{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 9.14px;
+}
+.program p{
+    width: 979px;
+    height: 121px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+.toggle-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 30px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-btn::after{
+    content: "";
+    position: absolute;
+    background: url(image/Vector\ \(2\).png);
+    width: 138px;
+    height: 115px;
+    top: -65px;
+    right: -52px;
+    z-index: -1;
+}
+.toggle-btn::before{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D, #27AAE1); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+}
+.toggle-btn.active{
+    display: none;
+}
+.content::after{
+    content: "";
+    position: absolute;
+    background: url(image/Vector\ \(2\).png);
+    width: 138px;
+    height: 115px;
+    top: -65px;
+    right: -52px;
+    z-index: -1;
+}
+.content{
+    display: none;
+    position: relative;
+    background-color: white;
+    padding: 19px 30px;
+    cursor: pointer;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(10px, 10px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D, #27AAE1); /* здесь задайте свой градиент */;
+    filter: blur(10px); /* задаем размытие */
+}
+.content.active{
+    display: block;
+}
+.content__top.active{
+    display: none;
+}
+.content__top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 19px;
+}
+.content p{
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.content img{
+    transform: rotate(45deg);
+    transition: 1s;
+}
+.toggle-btn1{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 30px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+.toggle-btn1::after{
+    content: "";
+    position: absolute;
+    background: url(image/Vector\ \(8\).png);
+    width: 149px;
+    height: 149px;
+    top: -98px;
+    left:  -103px;
+    z-index: -1;
+}
+.toggle-btn1::before{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D, #27AAE1); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+}
+.toggle-btn1.active{
+    display: none;
+}
+.content1{
+    display: none;
+    position: relative;
+    background-color: white;
+    padding: 19px 30px;
+    cursor: pointer;
+}
+.content1::after{
+    content: "";
+    position: absolute;
+    background: url(image/Vector\ \(8\).png);
+    width: 149px;
+    height: 149px;
+    top: -98px;
+    left:  -103px;
+    z-index: -1;
+}
+.content1::before{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(10px, 10px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D, #27AAE1); /* здесь задайте свой градиент */;
+    filter: blur(10px); /* задаем размытие */
+}
+.content1.active{
+    display: block;
+}
+.content__top1.active{
+    display: none;
+}
+.content__top1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 19px;
+}
+.content1 p{
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.content1 img{
+    transform: rotate(45deg);
+    transition: 1s;
+}
+.toggle-btn2{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 30px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+.toggle-btn2::after{
+    content: "";
+    position: absolute;
+    background: url(image/Vector\ \(9\).png);
+    width: 180px;
+    height: 180px;
+    top: -39px;
+    right:  -104px;
+    z-index: -1;
+}
+.toggle-btn2::before{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D, #27AAE1); /* здесь задайте свой градиент */;
+    filter: blur(2px); /* задаем размытие */
+}
+.toggle-btn2.active{
+    display: none;
+}
+.content2{
+    display: none;
+    position: relative;
+    background-color: white;
+    padding: 19px 30px;
+    cursor: pointer;
+}
+.content2::after{
+    content: "";
+    position: absolute;
+    background: url(image/Vector\ \(9\).png);
+    width: 180px;
+    height: 180px;
+    top: -39px;
+    right:  -104px;
+    z-index: -1;
+}
+.content2::before{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(10px, 10px); /* задаем смещение */
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D, #27AAE1); /* здесь задайте свой градиент */;
+    filter: blur(10px); /* задаем размытие */
+}
+.content2.active{
+    display: block;
+}
+.content__top2.active{
+    display: none;
+}
+.content__top2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 19px;
+}
+.content2 p{
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.content2 img{
+    transform: rotate(45deg);
+    transition: 1s;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.mentors{
+    height: 600px;
+    background-color: #00093C;
+    position: relative;
+}
+.mentors::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 50px;
+    left: 50px;
+    background: url("./image/Vector\ \(1\).png") center/cover no-repeat;
+}
+.mentors::before {
+    content: "";
+    position: absolute;
+    width: 98px;
+    height: 81px;
+    top: 473px;
+    left: 740px;
+    background: url("image/Vector\ \(2\).png") center/cover no-repeat;
+}
+.mentors h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-top: 62px;
+    text-align:center ;
+    position: relative;
+}
+.mentors__card{
+    width: 280px;
+    height: 360px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.mentors__border{
+    padding: 20px 70px 0;
+    position: relative;
+}
+.mentors__photo{
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+.mentors__card h5{
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.mentors__card p{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4F4F4F;
+}
+.mentors__box{
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+.mentors__card .vectorCard1{
+    position: absolute;
+    left: -78px;
+    top: -98px;
+    z-index: -1;
+}
+.mentors__img .mentors__r1{
+    position: absolute;
+    right:  -160px;
+    top: 119px;
+}
+.mentors__img .mentors__r2{
+    position: absolute;
+    right:  60px;
+    top: 361px;
+}
+.mentors__img .mentors__r3{
+    position: absolute;
+    left:  -240px;
+    top: 410px;
+}
+.swiper-slide img{
+    width: 316px;
+    height: 210px;
+    margin-left: 20px;
+}
+.photos{
+    padding-bottom: 332px;
+    position: relative;
+}
+.photos h2{
+    margin-top: 74px;
+    font-weight: 700;
+    font-size: 36px;
+}
+.photos p{
+    width: 974px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 11px;
+    height: 71px;
+}
+.swiper-scrollbar{
+    width: 1180px !important;
+    margin-left: 120px;
+}
+.swiper-scrollbar-drag{
+    background:  linear-gradient( to right, #F7941D, #27AAE1) !important;
+}
+.scrollbar{
+    margin-top: 38px;
+
+}
+
+.helper{
+    width: 1180px;
+    height: 270px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    bottom: -40px;
+    display: flex;
+}
+.helper img{
+    position: absolute;
+    top: 24px;
+    left: -50px;
+}
+.helper::before{
+    content: "";
+    position: absolute;
+    inset: -1px; /* задаем растяжение */
+    transform: translate(0.5px, 0.5px); /* задаем смещение */    
+    z-index: -1; /* поместим позади элемента */
+    background: linear-gradient( to right, #F7941D, #27AAE1); /* здесь задайте свой градиент */;
+    filter: blur(5px); /* задаем размытие */
+    border-radius: 20px;
+}
+.helper__border{
+    background: url(image/Union\ \(1\).png);
+    width: 419.78px;
+    height: 192px;
+    margin: 40px 0px 40px 232px;
+}
+.helper__border h4{
+    margin-left: 49px;
+    margin-top: 22px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.helper__border p{
+    margin-left: 49px;
+    margin-bottom: 16px;
+    width: 352px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.helper__form{
+    padding-top: 40px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.first__row input{
+    width: 440px;
+    height: 50px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #00093C10;
+}
+.middle__row input{
+    margin-top: 20px;
+    width: 210px;
+    height: 50px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #00093C10;
+}
+.middle__row{
+    display: flex;
+    justify-content: space-between;
+}
+input::placeholder{
+    padding: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+.last__row{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.last__row p{
+    width: 211px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 10px;
+    color: #4F4F4F;
+    line-height: 14px;
+    margin-top: 0;
+}
+.last__row button{
+    width: 210px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #F7941D;
+    color: white;
+    border: 0ch;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+footer{
+    background-color: #00093C;
+    height: 560px;
+    color: white;
+}
+footer .container{
+    display: flex;
+}
+.footer__logo{
+    margin-top: 140px;
+}
+.footer__contacts h4{
+    margin-top: 43px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.footer__contacts p{
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    width: 199px;
+}
+.footer__social{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 25px;
+}
+.footer__yandex{
+    margin-top: 15px;
+}
+.footer__hod{
+    margin-top: 21px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+.footer__info{
+    margin-left: 86px;
+    margin-top: 70px;
+    display: flex;
+    column-gap: 60px;
+}
+.footer__kids h4{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer__kids ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 374px;
+}
+.footer__kids li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.footer__teenagers h4{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer__teenagers ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 392px;
+    width: 267px;
+}
+.footer__teenagers li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.li{
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer__adult h4{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer__adult ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 340px;
+    width: 186px;
+}
+.footer__adult li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.footer__information h4{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer__information ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 238px;
+    width: 103px;
+}
+.footer__information li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+}
