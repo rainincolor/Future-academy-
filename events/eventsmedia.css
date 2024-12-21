@@ -66,6 +66,9 @@
     .helper::before{
         display: none;
     }
+    .helper__form {
+        padding: 0;
+    }
 
 }
 @media(max-width:1132px){
@@ -213,4 +216,60 @@
         top: -100px;
         left: -55px;
     }
+}
+@media(max-width:470px){
+    .webinar__boxright::before {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .helper__border{
+        width: 300px;
+        background: url(../image/2222.png) center/cover no-repeat;
+        height: 145px;
+    }
+    .helper__border h4 {
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 9px;
+        margin-left: 9px;
+    }
+    .helper__border p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 9px;
+        margin-left: 9px;
+        width: 270px;
+    }
+    .events__card {
+        padding: 18px;
+        width: 300px;
+    }
+    .events__card2 {
+        padding: 18px;
+        width: 300px;
+    }
+    .events__card3 {
+        padding: 18px;
+        width: 300px;
+    }
+    .events__card4 {
+        padding: 18px;
+        width: 300px;
+    }
+    .events__card5 {
+        padding: 18px;
+        width: 300px;
+    }
+    .events__card6 {
+        padding: 18px;
+        width: 300px;
+    }
+    .webinar__left{
+        width: 300px;
+    }
+    .webinar__right{
+        width: 300px;
+    }
+
 }
