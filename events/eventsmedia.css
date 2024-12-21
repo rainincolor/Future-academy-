@@ -286,5 +286,24 @@
     .webinar__right{
         width: 300px;
     }
+    .events__card p{
+        width: 250px;
+    }
+    .events__card2 p{
+        width: 250px;
+    }
+    .events__card3 p{
+        width: 250px;
+    }
+    .events__card4 p{
+        width: 250px;
+    }
+    .events__card5 p{
+        width: 250px;
+    }
+    .events__card6 p{
+        width: 250px;
+    }
+
 
 }
